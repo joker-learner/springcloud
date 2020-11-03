@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://127.0.0.1:3306/mydb?serverTimezone=UTC
+    password: 123456
+    username: root
+  application:
+    name: user-service
+server:
+  port: 9091
+
+mybatis:
+  type-aliases-package: com.lc.pojo
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.1:10086/eureka
