@@ -17,6 +17,7 @@
         <module>user-service</module>
         <module>custom-demo</module>
         <module>eureka</module>
+        <module>eurela7002</module>
     </modules>
 
     <properties>
