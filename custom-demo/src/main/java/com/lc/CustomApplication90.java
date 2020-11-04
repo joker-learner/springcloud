@@ -8,9 +8,9 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @ComponentScan("com.lc.controller")
-public class CustomApplication {
+public class CustomApplication90 {
     public static void main(String[] args) {
-        SpringApplication.run(CustomApplication.class, args);
+        SpringApplication.run(CustomApplication90.class, args);
     }
 
     @Bean  //用于注入别人写的类

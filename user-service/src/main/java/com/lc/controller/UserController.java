@@ -1,5 +1,6 @@
 package com.lc.controller;
 
+import com.lc.pojo.CommomReslut;
 import com.lc.pojo.Users;
 import com.lc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,14 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/{id}")
-    public Users querById(@PathVariable Long id){
-        return userService.findById(id);
+    public CommomReslut<Users> querById(@PathVariable Long id){
+        Users user = userService.findById(id);
+        if(user != null){
+            return new CommomReslut<Users>(200 , "查询成功.." , user);
+        }else {
+            return new CommomReslut<Users>(500 , "没有这个人" , null);
+        }
+
     }
 
 }
