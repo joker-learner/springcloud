@@ -10,4 +10,5 @@ public class EnrekaApplication10086 {
     public static void main(String[] args) {
         SpringApplication.run(EnrekaApplication10086.class, args);
     }
+
 }
